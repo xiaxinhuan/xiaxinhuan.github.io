@@ -18,7 +18,20 @@ const config={
             { test: /\.css$/, use:['style-loader','css-loader']},
             { test: /\.js$/, use:'babel-loader', exclude:/node_modules/},
             { test: /\.vue$/, use:'vue-loader'},
-            {test: /\.scss$/,use: ["style-loader", "css-loader", "sass-loader"]}
+            {test: /\.scss$/,use: ["style-loader", "css-loader", "sass-loader"]},
+            {//处理图片文件
+                test: /\.(gif|jpg|jpeg|png|svg)$/ ,
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            // limit: 1024,
+                            name: '[name]-aaa.[ext]'
+                        }
+                    },
+                ]
+            }
+
         ]
     },
     plugins:[
