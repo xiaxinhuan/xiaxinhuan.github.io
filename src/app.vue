@@ -1,8 +1,8 @@
 <template>
     <div>
         <headerComponent></headerComponent>
-        <!-- <router-view></router-view> -->
-        <HomeComponent></HomeComponent>
+        <router-view></router-view>
+        <!-- <HomeComponent></HomeComponent> -->
     </div>  
 </template>
 <script>

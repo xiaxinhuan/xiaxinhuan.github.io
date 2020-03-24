@@ -8,9 +8,9 @@ const env = process.env.NODE_ENV === 'development'
 
 
 const config={
-    entry:path.join(__dirname,"./src/main.js"),
+    entry:path.join(__dirname,"../src/main.js"),
     output:{
-        path:path.join(__dirname,"./dist"),
+        path:path.join(__dirname,"../dist"),
         filename:'bundle.js'
     },
     module:{
@@ -36,7 +36,7 @@ const config={
     },
     plugins:[
         new HtmlWebpackPlugin({
-            template: path.join(__dirname,'./src/index.html')
+            template: path.join(__dirname,'../src/index.html')
         }),
         new VueLoaderPlugin(),
         new CleanWebpackPlugin(),  //删除插件
