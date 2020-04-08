@@ -1,20 +1,30 @@
 <template>
-    <div>
-        <headerComponent></headerComponent>
-        <router-view></router-view>
+    <div class="content_box main_box">
+        <NavComponent></NavComponent>
+        <div class="r_content">
+            <router-view></router-view>
+        </div>    
         <!-- <HomeComponent></HomeComponent> -->
     </div>  
 </template>
 <script>
-    import HeaderComponent from './components/header.vue';
+    import NavComponent from './components/nav.vue';
     import HomeComponent from './views/home.vue';
     export default{
         components: {
-            HeaderComponent,
+            NavComponent,
             HomeComponent
         },
     }
 </script>
-<style>
-    
+<style lang="scss" scoped>
+    .main_box{
+        border-top: 3px solid #000;
+        padding-bottom: 40px;
+        .r_content{
+            margin-left: 220px;
+            background-color: #fff;
+            padding:  30px 0;
+        }
+    }
 </style>

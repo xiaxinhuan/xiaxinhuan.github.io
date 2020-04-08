@@ -1,5 +1,5 @@
 <template>
-    <div class="content_box">
+    <div>
         <h3 class="title">精选 15个必备的VSCode插件</h3>
         <ul>
             <li v-for="(item,index) in list" :key="index">
@@ -61,9 +61,7 @@
 
     }
 </script>    
-<style lang="scss">
-    .content_box{
-        padding: 0 150px;
+<style lang="scss" scoped>
         .title{
             text-align:left;
             text-indent: 10px;
@@ -96,5 +94,4 @@
                 }
             }
         }
-    }
 </style>

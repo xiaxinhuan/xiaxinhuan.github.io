@@ -1,5 +1,5 @@
 <template>
-    <div class="content_box">
+    <div>
         <ul>
             <li>
                 <p class="title">1.变量</p>
