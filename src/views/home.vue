@@ -2,50 +2,58 @@
     <div>
         <ul class="ul_box">
             <li>
-                <h1>js小复习</h1>
-                <p>
-                    <span>发布于2020-04-08</span>
+                <h1>基础复习</h1>
+                <p class="time_top">
+                    <span>发布于</span>
+                    <span>2020-04-07</span>
                     <span>|</span>
-                    <span>分类于JavaScript</span>
+                    <span>分类于</span>
+                    <span>JavaScript</span>
                 </p>
                 <div class="tl">
                     <h3>努力学习ing:</h3>
                     <p>1、值类型和引用类型——堆和栈 值类型： string、number、boolean、undefined、null 引用类型： 对象(Object)、数组(Array)、函数(Function) 值类型： （1）占用空间固定、保存在栈中，保存与复制的是值本身 （2）使用typeof检测数据的类型 （3）基本数据类型是值类型 引用…</p>
-                    <p class="btn read">阅读全文</p>
+                    <p class="btn read" @click="$router.push({path:'/Component01'})">阅读全文</p>
                 </div>
             </li>
             <li>
-                <h1>js宏任务与微任务</h1>
-                <p>
-                    <span>发布于2020-04-08</span>
+                <h1>js中的宏任务与微任务</h1>
+                <p class="time_top">
+                    <span>发布于</span>
+                    <span>2020-04-08</span>
                     <span>|</span>
-                    <span>分类于JavaScript</span>
+                    <span>分类于</span>
+                    <span>JavaScript</span>
                 </p>
                 <div class="tl">
                     <h3>事件循环:</h3>
+                    <p>JavaScript 语言的一大特点就是单线程，也就是说，同一个时间只能做一件事。为了协调事件、用户交互、脚本、UI 渲染和网络处理等行为，防止主线程的不阻塞，Event Loop 的方案应用而生。Event Loop 包含两类：一类是基于 Browsing Context，一种是基于 Worker。二者的运行是独立的，也就是说，每一个 JavaScript 运行的"线程环境"都有一个独立的 Event Loop，每一个 Web Worker 也有一个独立的 Event Loop。</p>
+                    <p class="btn read" @click="$router.push({path:'/Component02'})">阅读全文</p>
+                </div>
+            </li>
+            <li>
+                <h1>LRU算法</h1>
+                <p class="time_top">
+                    <span>发布于</span>
+                    <span>2020-04-09</span>
+                    <span>|</span>
+                    <span>分类于</span>
+                    <span>算法</span>
+                </p>
+                <div class="tl">
+                    <h3>从浏览器缓存淘汰策略和Vue的keep-alive学习LRU算法:</h3>
                     <p>JavaScript 语言的一大特点就是单线程，也就是说，同一个时间只能做一件事。为了协调事件、用户交互、脚本、UI 渲染和网络处理等行为，防止主线程的不阻塞，Event Loop 的方案应用而生。Event Loop 包含两类：一类是基于 Browsing Context，一种是基于 Worker。二者的运行是独立的，也就是说，每一个 JavaScript 运行的"线程环境"都有一个独立的 Event Loop，每一个 Web Worker 也有一个独立的 Event Loop。</p>
                     <p class="btn read">阅读全文</p>
                 </div>
             </li>
             <li>
-                <h1>js宏任务与微任务</h1>
-                <p>
-                    <span>发布于2020-04-08</span>
+                <h1>vue的生命周期</h1>
+                <p class="time_top">
+                    <span>发布于</span>
+                    <span>2020-04-09</span>    
                     <span>|</span>
-                    <span>分类于JavaScript</span>
-                </p>
-                <div class="tl">
-                    <h3>事件循环:</h3>
-                    <p>JavaScript 语言的一大特点就是单线程，也就是说，同一个时间只能做一件事。为了协调事件、用户交互、脚本、UI 渲染和网络处理等行为，防止主线程的不阻塞，Event Loop 的方案应用而生。Event Loop 包含两类：一类是基于 Browsing Context，一种是基于 Worker。二者的运行是独立的，也就是说，每一个 JavaScript 运行的"线程环境"都有一个独立的 Event Loop，每一个 Web Worker 也有一个独立的 Event Loop。</p>
-                    <p class="btn read">阅读全文</p>
-                </div>
-            </li>
-            <li>
-                <h1>js宏任务与微任务</h1>
-                <p>
-                    <span>发布于2020-04-08</span>
-                    <span>|</span>
-                    <span>分类于JavaScript</span>
+                    <span>分类于</span>
+                    <span>JavaScript</span>
                 </p>
                 <div class="tl">
                     <h3>事件循环:</h3>
@@ -93,6 +101,15 @@ export default {
             margin: 50px;
             box-shadow: 0 0 5px rgba(202,203,203,0.5);
             padding: 25px;
+            .time_top{
+                margin: 5px 0;
+                font-size: 12px;
+                margin-right: 5px;
+                color: #999;
+                span{
+                    margin-right: 3px;
+                }
+            }
             .read{
                 width: 60px;
                 margin: 0 auto;

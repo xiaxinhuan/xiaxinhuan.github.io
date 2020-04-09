@@ -1,5 +1,7 @@
 <template>
     <div>
+        <!-- 基础复习 -->
+        <backComponent></backComponent>
         <ul>
             <li>
                 <p class="title">1.变量</p>
@@ -42,12 +44,25 @@
                     <p>对于函数声明和函数表达式两种定义函数的方式而言，解析器并不是一视同仁的。解析器会率先读取函数声明，并使其在执行任何代码之前可用（可以访问）；对于函数表达式，则必须等到解析器执行到它所在的代码行，才会真正被解释执行.</p>
                 </div>
             </li>
-            <li>
-                <p class="title">5.</p>
-            </li>
         </ul>
     </div>
 </template>
-<style lang="scss">
+<script>
+import backComponent from "../../components/back.vue";
+export default{
+    components:{
+        backComponent:backComponent
+    }
 
+}
+
+</script>
+<style lang="scss" scoped>
+    ul li{
+        text-align: left;
+        padding: 10px;
+        p{
+            margin: 10px 0;
+        }
+    }
 </style>
