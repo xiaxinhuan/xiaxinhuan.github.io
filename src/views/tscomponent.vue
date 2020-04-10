@@ -1,3 +1,3 @@
 <template>
-    <div>这是个ts复习页面</div>
+    <div>敬请期待</div>
 </template>    

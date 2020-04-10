@@ -9,12 +9,10 @@
 </template>
 <script>
     import NavComponent from './components/nav.vue';
-    import HomeComponent from './views/home.vue';
     export default{
         components: {
-            NavComponent,
-            HomeComponent
-        },
+            NavComponent
+        }
     }
 </script>
 <style lang="scss" scoped>

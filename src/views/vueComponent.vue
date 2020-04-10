@@ -1,6 +1,5 @@
 <template>
     <div class="vue_box">
-        <h3>这是个vue复习页面</h3>
         <ul>
             <li>
                 1.v-clock 解决插值闪烁问题 ；默认v-text没有插值闪烁问题，但会覆盖文本中原本的内容

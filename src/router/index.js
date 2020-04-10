@@ -1,10 +1,14 @@
 import Vue from "vue"
 import Router from "vue-router";
-import Home from '../views/home.vue';
+import Home from '../views/home/home.vue';
 import Component01 from '../views/home/component01.vue';
 import Component02 from '../views/home/component02.vue';
+import Component03 from '../views/home/component03.vue';
+import Component04 from '../views/home/component04.vue';
 
 import Rcomponent01 from '../views/review/rcomponent01.vue';
+
+import Acomponent01 from '../views/about/acomponent01.vue';
 
 import CssComponent from '../views/cssComponent.vue';
 
@@ -38,9 +42,24 @@ export default new Router({
             component:Component02
         },
         {
+            path:'/Component03',
+            name:'Component03',
+            component:Component03
+        },
+        {
+            path:'/Component04',
+            name:'Component04',
+            component:Component04
+        },
+        {
             path:'/Rcomponent01',
             name:'Rcomponent01',
             component:Rcomponent01
+        },
+        {
+            path:'/Acomponent01',
+            name:'Acomponent01',
+            component:Acomponent01
         },
         {
             path:'/css',

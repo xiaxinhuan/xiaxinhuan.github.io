@@ -42,8 +42,8 @@
                 </p>
                 <div class="tl">
                     <h3>从浏览器缓存淘汰策略和Vue的keep-alive学习LRU算法:</h3>
-                    <p>JavaScript 语言的一大特点就是单线程，也就是说，同一个时间只能做一件事。为了协调事件、用户交互、脚本、UI 渲染和网络处理等行为，防止主线程的不阻塞，Event Loop 的方案应用而生。Event Loop 包含两类：一类是基于 Browsing Context，一种是基于 Worker。二者的运行是独立的，也就是说，每一个 JavaScript 运行的"线程环境"都有一个独立的 Event Loop，每一个 Web Worker 也有一个独立的 Event Loop。</p>
-                    <p class="btn read">阅读全文</p>
+                    <p>浏览器缓存,当我们打开一个网页时,它会在发起真正的网络请求前，查询浏览器缓存，看是否有要请求的文件，如果有，浏览器将会拦截请求，返回缓存文件，并直接结束请求，不会再去服务器上下载。如果不存在，才会去服务器请求。</p>
+                    <p class="btn read" @click="$router.push({path:'/Component03'})">阅读全文</p>
                 </div>
             </li>
             <li>
@@ -56,9 +56,8 @@
                     <span>JavaScript</span>
                 </p>
                 <div class="tl">
-                    <h3>事件循环:</h3>
-                    <p>JavaScript 语言的一大特点就是单线程，也就是说，同一个时间只能做一件事。为了协调事件、用户交互、脚本、UI 渲染和网络处理等行为，防止主线程的不阻塞，Event Loop 的方案应用而生。Event Loop 包含两类：一类是基于 Browsing Context，一种是基于 Worker。二者的运行是独立的，也就是说，每一个 JavaScript 运行的"线程环境"都有一个独立的 Event Loop，每一个 Web Worker 也有一个独立的 Event Loop。</p>
-                    <p class="btn read">阅读全文</p>
+                    <p>在谈到Vue的生命周期的时候，我们首先需要创建一个实例，也就是在 new Vue ( ) 的对象过程当中，首先执行了init（init是vue组件里面默认去执行的），在init的过程当中首先调用了beforeCreate，然后在injections（注射）和reactivity（反应性）的时候，它会再去调用created。</p>
+                    <p class="btn read" @click="$router.push({path:'/Component04'})">阅读全文</p>
                 </div>
             </li>
         </ul>

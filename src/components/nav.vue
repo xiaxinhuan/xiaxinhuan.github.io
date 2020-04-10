@@ -8,7 +8,7 @@
           <p>Technology&Block</p>
         </div>
         <ul class="nav_title">
-          <li v-for="(item,index) in tabTitleList" :key="index" @click="goNew(item)">{{item.title}}</li>
+          <li v-for="(item,index) in tabTitleList" :key="index" :class="{'active':i==index}" @click="goNew(item,index)">{{item.title}}</li>
         </ul>
         <div class="some_link">
           <h3>友情链接</h3>
@@ -40,13 +40,15 @@ export default {
   data() {
     return {
       delogBoole: false,
+      isActive:true,
+      i:0,
       headerTes: "",
       tes: "",
       goUrl: "",
       tabTitleList: [
         { title: "首页", url: "/home" },
         { title: "归档", url: "/css" },
-        { title: "关于", url: "/js" },
+        { title: "关于", url: "/Acomponent01" },
         { title: "面试", url: "/vue" },
         { title: "复习", url: "/Rcomponent01" },
         { title: "more", url: "/ts" }
@@ -68,7 +70,8 @@ export default {
     };
   },
   methods: {
-    goNew(item) {
+    goNew(item,index) {
+      this.i=index
       this.$router.push({ path: item.url });
     },
     toNew(item) {
@@ -123,6 +126,9 @@ export default {
           color: #000;
           padding: 5px 20px;
         }
+      }
+      li.active{
+        background-color: #f9f9f9;
       }
       li:hover {
         background-color: #f9f9f9;
